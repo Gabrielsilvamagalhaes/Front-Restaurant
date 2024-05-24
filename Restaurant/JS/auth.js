@@ -1,36 +1,35 @@
-// script.js
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Impede o envio do formulário padrão
 
-    const name = document.querySelector('input[name="name"]').value;
     const username = document.querySelector('input[name="username"]').value;
     const password = document.querySelector('input[name="password"]').value;
 
-    const userCreateDto = {
-        name: name,
+    const userLoginDto = {
         username: username,
         password: password
     };
 
-    fetch('http://localhost:8080/api/v1/restaurant/users', {
+    fetch('http://localhost:8080/api/restaurant/auth', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(userCreateDto)
+        body: JSON.stringify(userLoginDto)
     })
     .then(response => {
         if (response.ok) {
             return response.json();
         }
-        throw new Error('Erro na criação do usuário');
+        throw new Error('Erro na autenticação');
     })
     .then(data => {
-        console.log('Usuário criado com sucesso:', data);
-        alert('Usuário criado com sucesso!');
+        console.log('Token JWT recebido:', data.token);
+        localStorage.setItem('jwt', data.token);
+        alert('Autenticação bem-sucedida!');
+        window.location.href = 'principal.html';
     })
     .catch(error => {
         console.error('Erro:', error);
-        alert('Erro ao criar usuário.');
+        alert('Erro na autenticação. Verifique suas credenciais.');
     });
 });

@@ -1,0 +1,32 @@
+.search-bar {
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.menu {
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px; 
+
+    background-color: #F2F2F2;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /
+}
+
+.restaurant-list {
+    max-height: 180px; 
+    overflow-y: scroll;
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.restaurant-item {
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

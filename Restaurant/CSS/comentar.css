@@ -1,0 +1,46 @@
+/* Estilos para o formulário */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 60%; /* Aumenta a largura */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 80%; /* Aumenta a largura */
+    height: 100px; /* Diminui a altura */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+input[type="submit"] {
+    color: black;
+    margin: 5px;
+    padding: 0.625em 1.25em; 
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    border-radius: 5px;
+    background-color: rgb(211, 208, 208);
+}
+
+
