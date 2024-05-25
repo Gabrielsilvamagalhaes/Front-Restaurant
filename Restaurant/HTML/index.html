@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paladar Apurado - Autenticar</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paladar Apurado - Autenticar</title>
 
-        <link rel="stylesheet" href="../CSS/login.css">
-    </head>
-    <body>
-        
-        <div id="principal">
-            <div>
-                <h2>Paladar Apurado</h2>
-            </div>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <script src="../JS/auth.js" defer></script>
+  </head>
+  <body>
+    <div id="principal">
+      <div>
+        <h2>Paladar Apurado</h2>
+      </div>
 
-            <div class="forms">
-                <form id="registrationForm">
-                    <p>E-mail:</p>
-                    <input type="email" name="username" class="menu">
+      <div class="forms">
+        <form id="registrationForm">
+          <!-- <p>E-mail:</p> -->
+          <input type="email" name="username" class="menu" placeholder="Email"/>
 
-                    <p>Senha:</p>
-                    <input type="password" name="password" class="menu">
+          <!-- <p>Senha:</p> -->
+          <input type="password" name="password" class="menu" placeholder="Senha"/>
 
-                    <input type="submit" value="Autenticar" class="button">
-                </form>
+          <input type="submit" value="Entrar" class="button" />
+        </form>
+      </div>
 
-            </div>
-
-            <span style="font-size: 13px;">Não possui conta? <a href="login.html">Registre-se aqui</a></span>
-
-        </div>
-        <script src="../JS/auth.js"></script>
-    </body>
+      <span>Não possui conta? <a href="login.html">Registre-se aqui</a></span>
+    </div>
+  </body>
 </html>

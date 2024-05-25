@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Paladar Apurado - Avaliar Restaurante</title>
+        <link rel="stylesheet" href="../CSS/global.css">
         <link rel="stylesheet" href="../CSS/avaliar.css">
-        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/avaliar.js"></script>
 
     </head>
     <body>
@@ -18,28 +19,25 @@
 
             <form id="avaliacaoForm">
                 <!-- Campo para inserir o ID do restaurante -->
-                <label for="comida">Identificador do Restaurante:</label>
-                <input type="number" id="restauranteId" name="restauranteId" value="INSIRA O ID AQUI">
+                <input type="number" id="restauranteId" name="restauranteId" value="INSIRA O ID AQUI" placeholder="ID do restaurante">
     
                 <!-- Campo para avaliar comida -->
-                <label for="comida">Avaliação da Comida:</label>
-                <input type="number" id="comida" name="comida" min="1" max="5"><br>
+                <input type="number" id="comida" name="comida" min="1" max="5" placeholder="Avaliação da Comida">
     
                 <!-- Campo para avaliar ambiente -->
-                <label for="ambiente">Avaliação do Ambiente:</label>
-                <input type="number" id="ambiente" name="ambiente" min="1" max="5"><br>
+                <input type="number" id="ambiente" name="ambiente" min="1" max="5" placeholder="Avaliação do Ambiente">
     
                 <!-- Campo para avaliar serviço -->
-                <label for="servico">Avaliação do Serviço:</label>
-                <input type="number" id="servico" name="servico" min="1" max="5"><br>
-    
+                <input type="number" id="servico" name="servico" min="1" max="5" placeholder="Avaliação de Serviço">
+                
                 <!-- Botão para enviar a avaliação -->
-                <input type="submit" value="Enviar Avaliação">
+                <div class="button-container">
+                    <button onclick="window.location.href = 'principal.html'" class="button">Voltar</button>
+                    <input type="submit" value="Enviar Avaliação">
+                </div>
             </form>
 
-            <button onclick="window.location.href = 'principal.html'" class="button">Voltar</button>
 
         </div>
-        <script src="../JS/avaliar.js"></script>
     </body>
 </html>
