@@ -9,7 +9,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         password: password
     };
 
-    fetch('http://localhost:8080/api/restaurant/auth', {
+    fetch('https://back-restaurant-rsdj.onrender.com/api/restaurant/auth', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

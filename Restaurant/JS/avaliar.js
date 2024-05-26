@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         // Faz a requisição para o endpoint do backend para criar a avaliação
-        fetch(`http://localhost:8080/api/v1/restaurant/${restauranteId}/assessment`, {
+        fetch(`https://back-restaurant-rsdj.onrender.com/api/v1/restaurant/${restauranteId}/assessment`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

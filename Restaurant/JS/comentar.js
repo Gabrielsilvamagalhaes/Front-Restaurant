@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         // Faz a requisição para o endpoint do backend para criar o comentário
-        fetch(`http://localhost:8080/api/v1/restaurant/${restauranteId}/comment`, {
+        fetch(`https://back-restaurant-rsdj.onrender.com/api/v1/restaurant/${restauranteId}/comment`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Faz a requisição para buscar os restaurantes do backend
-    fetch('http://localhost:8080/api/v1/restaurant', requestOptions) // Substitua pelo endpoint real da sua API
+    fetch('https://back-restaurant-rsdj.onrender.com/api/v1/restaurant', requestOptions) // Substitua pelo endpoint real da sua API
         .then(response => response.json())
         .then(data => {
             // Percorre os dados e cria elementos para cada restaurante
