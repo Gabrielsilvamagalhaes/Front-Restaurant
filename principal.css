@@ -20,13 +20,29 @@ p,
   color: #fff;
 }
 
+#githubImg {
+  position: relative;
+  left: 220px;
+  bottom: 27px;
+  width: 50px;
+  height: 40px;
+}
+
+#swaggerImg {
+  position: relative;
+  right: 220px;
+  bottom: 70px;
+  width: 50px;
+  height: 40px;
+}
+
 #principal {
-  padding: 4rem 0;
+  padding: 2rem 0 ;
   border-radius: 20px;
   margin: 10em auto;
   text-align: center;
   width: 500px;
-  height: 614px;
+  height: 680px;
   background-color: var(--background-form);
   display: flex;
   flex-direction: column;
@@ -58,10 +74,6 @@ p,
   background-color: transparent;
 }
 
-.menu:hover {
-  background-color: hsl(350, 77%, 36%);
-}
-
 .button {
   height: 50px;
   width: 150px;
@@ -73,6 +85,22 @@ p,
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.button:hover, .docs-button:hover, .menu:hover {
   background-color: hsl(350, 77%, 36%);
 }
+
+.docs-button {
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  width: 150px;
+  margin-bottom: 20px;
+  line-height: 2em;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--color-red);
+  font-size: 28px;
+  transition: background-color 0.3s ease;
+}
+
+
